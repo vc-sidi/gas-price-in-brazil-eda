@@ -46,7 +46,7 @@ else:
                 np.random.rand(100, 5),
                 columns=['a', 'b', 'c', 'd', 'e']
             )"""
-            a = pd.read_csv('https://github.com/02-data-analysis-cv-cin/gas-prices-brazil/blob/main/dataset/formated_gas_prices_brazil.csv')
+            a = pd.read_csv('https://github.com/02-data-analysis-cv-cin/gas-prices-brazil/raw/main/dataset/formated_gas_prices_brazil.csv')
             return a
         df = load_data()
         pr = ProfileReport(df, explorative=True)
