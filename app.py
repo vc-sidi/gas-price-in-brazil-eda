@@ -6,9 +6,9 @@ from streamlit_pandas_profiling import st_profile_report
 
 # Web App Title
 st.markdown('''
-# **The Ellon Musk's Tweets EDA App**
+# **The Gas Prices in Brazil EDA App**
 
-This is the **Ellon Musk's Tweets EDA App** created in Streamlit using the **pandas-profiling** library.
+This is the **Gas Prices in Brazil EDA App** created in Streamlit using the **pandas-profiling** library.
 
 **Deploy by:** [Richardson Andrade](http://github.com/jcrbsa) 
 **Acknowledge Credit Source-Code:** App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
@@ -46,7 +46,7 @@ else:
                 np.random.rand(100, 5),
                 columns=['a', 'b', 'c', 'd', 'e']
             )"""
-            a = pd.read_csv('https://drive.google.com/uc?export=download&id=1JPteFsXb2cq5ObAW6ZWHMe9OU7BT2i_l')
+            a = pd.read_csv('https://github.com/02-data-analysis-cv-cin/gas-prices-brazil/blob/main/dataset/formated_gas_prices_brazil.csv')
             return a
         df = load_data()
         pr = ProfileReport(df, explorative=True)
